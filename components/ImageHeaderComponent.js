@@ -1,3 +1,4 @@
+import path from 'path';
 export class ImageHeaderComponent {
 
     render() {
@@ -14,10 +15,10 @@ export class ImageHeaderComponent {
         const titlesDiv = document.createElement('div')
 
         const paragraphHeader = document.createElement("p");
-
-        imgHeader.src = 'assets/header/entregadoraHeader.webp'
-        yellowBallon.src = 'assets/header/balaoLaranja.svg'
-        blueBalloon.src = 'assets/header/balaoAzul.svg'
+        console
+        imgHeader.src = '../assets/header/entregadoraHeader.webp'
+        yellowBallon.src = '../assets/header/balaoLaranja.svg'
+        blueBalloon.src = '../assets/header/balaoAzul.svg'
 
 
         imgHeader.className = 'image-header '
