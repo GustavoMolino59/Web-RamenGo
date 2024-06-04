@@ -1,0 +1,464 @@
+:root {
+  --font-black: #000000;
+  --base-blue: #1820EF;
+  --base-red: #FF4E42;
+  --base-hard-red:#730000;
+  --base-yellow:#FFC024;
+  --base-white:#FAFAED;
+
+
+  
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --fs-1: 120px; /* Tamanho padrão para fs-1 em telas menores que 992px */
+  --fs-2: 48px;
+  --fs-3: 24px;
+  --fs-4: 16px;
+  --fs-5: 14px;
+  --font-size-regular: 20px;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*basic font-sizes */
+.fs-1 {
+  font-size: clamp(7rem, 2vw + 1rem, 20rem);
+}
+
+/* fs-2: grande */
+.fs-2 {
+  font-size: clamp(2.5rem, 1.5vw + 1rem, 3.5rem);
+}
+
+/* fs-3: médio grande */
+.fs-3 {
+  font-size: clamp(1.75rem, 1.2vw + 0.8rem, 3rem);
+}
+
+/* fs-4: médio */
+.fs-4 {
+  font-size: clamp(1.5rem, 1vw + 0.7rem, 2.5rem);
+}
+
+/* fs-5: pequeno */
+.fs-5 {
+  font-size: clamp(1.25rem, 0.8vw + 0.6rem, 2rem);
+}
+
+/* fs-6: bem pequeno */
+.fs-6 {
+  font-size: clamp(1rem, 0.6vw + 0.5rem, 1.5rem);
+}
+
+@media (min-width: 576px) {
+  :root {
+    font-size: 16px; /* Ajuste conforme necessário */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  :root {
+    font-size: 16px; /* Ajuste conforme necessário */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  :root {
+    font-size: 18px; /* Ajuste conforme necessário */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  :root {
+    font-size: 20px; /* Ajuste conforme necessário */
+  }
+}
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  :root {
+    font-size: 22px; /* Ajuste conforme necessário */
+  }
+}
+
+
+body {
+  font-weight: 400;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-grow: 1;
+  
+}
+
+
+/*Container Classes*/
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-padding{
+  width: 100%;
+  padding:1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.img-container{
+  max-width: 100%;
+  max-height: 100%;
+}
+.img-sucess{
+  max-width:75% ;
+}
+.rouded-little {
+  border-radius: 10px;
+}
+
+
+/*visiblity classes */
+.hidden{
+  visibility: hidden !important; 
+  display: none !important;
+}
+
+
+
+/*background Classes*/
+.back-red{
+  background-color: var(--base-red);
+  
+}
+.back-white{
+  background-color: var(--base-white);
+}
+.back-blue{
+  background-color: var(--base-blue);
+}
+.back-hard-red{
+  background-color: var(--base-hard-red);
+  min-height: 4rem;
+  aspect-ratio: 1;
+}
+
+
+/*text Classes*/
+
+.text-white{
+  color: var(--base-white);
+}
+.text-yellow{
+  color: var(--base-yellow);
+}
+.text-black{
+  color: var(--font-black);
+}
+.text-red{
+  color: var(--base-red);
+}
+.text-blue{
+  color:var(--base-blue);
+}
+.bold{
+  font-weight:900;
+}
+.text-align-center{
+  text-align: center;
+
+}
+
+/*Image Classes*/
+
+.rounded-background{
+  border-radius: 50%;
+}
+.relative{
+  position: relative;
+  top:20px
+}
+.absolute{
+  position: absolute;
+
+}
+
+
+/*size Classes*/
+.w-50{
+  width: 50%;
+}
+.w-75{
+  width: 75%;
+}
+
+/*display classes*/
+.display-flex-colunm{
+  display: flex;
+  flex-direction: column;
+
+}
+.display-flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+/*align classes*/
+
+.center-items{
+  align-items: center;
+  justify-content: center;
+}
+
+.center-between{
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.m-auto{
+  margin: auto;
+}
+.m-1{
+  margin: 1rem;
+}
+
+/*gaps */
+.gap-1{
+  gap:1rem;
+}
+.gap-2{
+  gap: 2rem;
+}
+.gap-3{
+  gap: 3rem;
+}
+
+/*btn */
+.btn {
+  background-color: #1820EF; /* Cor base do botão */
+  color: white; /* Cor do texto */
+  border: none; /* Remover borda padrão */
+  width: 213px;
+  height:60px ;
+  padding: 20px 16px; /* Espaçamento interno */
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 20.79px;
+  letter-spacing: 1.7799999713897705px;
+  text-align: left;
+; /* Tamanho da fonte */
+  border-radius: 50px; /* Arredondar cantos */
+  cursor: pointer; /* Cursor de pointer ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave ao mudar a cor de fundo */
+}
+
+
+
+/* Estilo do botão quando está desabilitado */
+.btn:disabled {
+  background-color: #C5C5C5; /* Cor do botão desabilitado */
+  cursor: not-allowed; /* Cursor de não permitido ao passar o mouse */
+  color: #7E7E7E; /* Cor do texto quando desabilitado */
+}
+
+/* Estilo do botão ao passar o mouse */
+.btn:hover:enabled {
+  background-color: #0b11ac; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do botão ao ser clicado */
+.btn:active:enabled {
+  background-color: #0D1397; /* Cor de fundo ao clicar */
+}
+
+
+
+/*specific classes*/
+.image-header {
+  position: absolute; /* Position the image relative to the nearest positioned ancestor (container) */
+  top: 50%; /* Center the image vertically */
+  left: 50%; /* Center the image horizontally */
+  transform: translate(-50%, -50%); /* Adjust the center position */
+  width: 110% !important; /* Adjust the size of the image */
+  height: auto !important; /* Maintain aspect ratio */
+  z-index: 10; /* Ensure the image is on top */
+}
+
+.ballonYellow-header{
+  position: absolute; /* Position the image relative to the nearest positioned ancestor (container) */
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: auto;
+  top:50%;
+  left: 100%;
+  z-index: 10; /* Ensure the image is on top */
+}
+
+.ballonBlue-header{
+  position: absolute; /* Position the image relative to the nearest positioned ancestor (container) */
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: auto;
+  top:5%;
+  left: 10%;
+  z-index: 10; /* Ensure the image is on top */
+}
+
+.header{
+  background-image:url(assets\header\header-background.webp) ;
+  background-size:contain;
+  background-position: center;
+  padding-bottom: 3rem;
+}
+.header.sucess{
+  background-image:url(assets/Sucess/header/header-sucess.webp) ;
+  padding:3rem 1rem !important;
+}
+
+.img-header{
+  padding-bottom:5rem ;
+}
+
+@media (min-width: 992px){
+    .img-header{
+      max-width: 75%;
+      margin:4rem;
+    }
+}
+.card-box-shadow{
+  box-shadow: 0px 4px 12px 0px #E0DBBF99;
+  padding:40px 16px 48px 16px;
+  min-width: 288px;
+  max-width: 288px;
+  gap:14px;
+  transition: background-color 0.3s ease; /* Transição suave ao mudar a cor de fundo */
+}
+.card-box-shadow.active{
+  background-color: var(--base-blue);
+}
+
+
+
+/*carrousel*/
+.carrossel {
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.container-carrousel {
+  display: flex;
+  width: max-content;
+  transition: 0.7s ease-in-out;
+  transform: translateX(0);
+}
+.btn-carrousel{
+  border-radius: 8px;
+  width: 12px;
+  height: 12px;
+  border:none ;
+  background-color:#E0DBBF;
+}
+
+
+.btn-carrousel.active{
+  border-radius: 8px !important;
+  width: 36px !important;
+  height: 12px !important;
+  border:none !important;
+  background-color:#FF4E42 !important;
+  margin: 2px;
+}
+@media (min-width:992px){
+  .buttons-container{
+    display: none;
+  }   
+  .carrossel{
+    align-items:center;
+    justify-content: center;
+  }  
+}
+
+
+
+@media (min-width: 992px) {
+  .titlesHeader{
+    display: none !important;
+  }
+}
+.titlesHeader{
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .titlesHeader-img{
+    display: flex !important;
+    flex-direction:column ;
+  
+  }
+}
+.titlesHeader-img{
+  display: none;
+  position: absolute; /* Position the image relative to the nearest positioned ancestor (container) */
+  top: 20%;
+  right:71%; /* Center the image horizontally */
+  z-index: 10; /* Ensure the image is on top */
+  
+}
+@media (min-width: 1440px) {
+  .titlesHeader-img{
+    top: 20%;
+    right:65%; /* Center the image horizontally */
+
+  }
+}
+.titlesHeader-img h1{
+  justify-items: baseline;
+  align-items: flex-end;
+  text-align: flex-end;
+  font-size: 160px;
+}
+.titlesHeader-img p{
+  text-align: start;
+  font-size: 16px;
+  max-width: 200px;
+}
+.titlesHeader-img span{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.button-header{
+  margin-top: 1rem;
+}
+
+
+
+/*sucess*/
+.body-sucess{
+  padding: 3rem 1rem;
+}
+@media (min-width:992px){
+  .main-sucess{
+    display: flex;
+  }
+}
+
+@media (min-width:992px){
+.topTitle{
+  align-self:flex-start;
+  margin-left: 1rem;
+}
+}
