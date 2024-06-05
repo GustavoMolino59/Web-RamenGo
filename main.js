@@ -42,7 +42,7 @@ async function showSuccessScreen(response) {
       </div>
       <div class="container back-white center-items display-flex-colunm center-items gap-2 body-sucess"> 
         <div class="display-flex-colunm center-items gap-1">
-          <img src="../Sucess/body/icon.svg"/>
+          <img src="../icon.svg"/>
           <p class="text-yellow">どもありがとうございます。</p>
           <h3 class="text-red">Your order is being prepared</h3>
         </div>
