@@ -16,9 +16,9 @@ export class ImageHeaderComponent {
 
         const paragraphHeader = document.createElement("p");
         console
-        imgHeader.src = '../assets/entregadoraHeader.webp'
-        yellowBallon.src = '../assets/balaoLaranja.svg'
-        blueBalloon.src = '../assets/balaoAzul.svg'
+        imgHeader.src = '../public/entregadoraHeader.webp'
+        yellowBallon.src = '../public/balaoLaranja.svg'
+        blueBalloon.src = '../public/balaoAzul.svg'
 
 
         imgHeader.className = 'image-header '
