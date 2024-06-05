@@ -17,11 +17,14 @@ export class CarrouselComponent{
         //Observadores para saber qual foi clicado
         this.selected = null;
         this.observer = observer
+        this.load = false
     }
     
     async fetchData(){
         const response = await api.get(this.route)
         this.slides = response
+        this.load = true
+        
     }
 
     setSelected(value) {
@@ -36,7 +39,7 @@ export class CarrouselComponent{
             const actual = new CardComponent(item)
             const actualHTML = actual.render()
 
-
+            
             this.cardComponents.push(actual)
             this.HTMLComponents.push(actualHTML)
             const button = document.createElement('button')
@@ -85,7 +88,16 @@ export class CarrouselComponent{
 
         this.addSwipeListener()
 
-        return carrouseContainer
+
+
+        //loader
+        const loaderDiv = document.createElement('div')
+        const carregando = document.createElement('h2')
+
+        loaderDiv.className = 'container display-flex-row center-items'
+        carregando.textContent = 'Carregando'
+        loaderDiv.appendChild(carregando)
+        return this.load ? carrouseContainer : loaderDiv
     }
     
     addSwipeListener() {
