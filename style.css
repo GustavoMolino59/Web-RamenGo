@@ -318,13 +318,13 @@ body {
 }
 
 .header{
-  background-image:url(public\header-background.webp) ;
+  background-image:url(..\header-background.webp) ;
   background-size:contain;
   background-position: center;
   padding-bottom: 3rem;
 }
 .header.sucess{
-  background-image:url(public/header/header-sucess.webp) ;
+  background-image:url(..\header-background.webp) ;
   padding:3rem 1rem !important;
 }
 
