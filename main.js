@@ -19,7 +19,7 @@ function homePage() {
         <p class="fs-4 text-align-center">Some people love, some don’t. We have options for all tastes. </p>
         <div data-component="Carrousel" data-props='{"observer":"selectProtein", "route":"/proteins"}'> </div>
       </div>
-      <div  data-component="Button" data-props='{"text":"PLACE MY ORDER" , "icon":"../assets/button/arrow.svg", "id":"buttonOnSubmit"}'>
+      <div  data-component="Button" data-props='{"text":"PLACE MY ORDER" , "icon":"../assets/arrow.svg", "id":"buttonOnSubmit"}'>
       </div>
   </main>
   `;
@@ -47,7 +47,7 @@ async function showSuccessScreen(response) {
           <h3 class="text-red">Your order is being prepared</h3>
         </div>
         <p class="text-black text-align-center">Hold on, when you least expect you will be eating your rámen.</p>
-        <div data-component="Button" data-props='{"text":"RETURN HOME" , "icon":"../assets/button/arrow.svg", "id":"ReturnHomeButton"}'></div>
+        <div data-component="Button" data-props='{"text":"RETURN HOME" , "icon":"../assets/arrow.svg", "id":"ReturnHomeButton"}'></div>
       </div>
     </main>
   `;
